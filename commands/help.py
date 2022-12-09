@@ -33,8 +33,7 @@ class help(commands.Cog):
                        value="Calculates the net evolutions points needed to attain the desired stat.", inline=False)
         help.add_field(name='-time (current movement points) (target movement points)', value='Calculates the Net amount of time to reach desired moves.', inline=False)
         help.add_field(name='-path (tribe) (x1) (y1) (x2) (y2)', value='Calculates the shortest path possible and send out an image showing the path.', inline=False)
-        help.add_field(name='-purge (amount)', value='Clears message by the amount specified. ONLY WORKS IF USER HAS manage_messages PERMISSION.', inline=False)
-        help.add_field(name='-base (tribe)', value='Returns an embed with the basse values of a specific tribe.', inline=False) 
+        help.add_field(name='-base (tribe)', value='Returns an embed with the base values of a specific tribe.', inline=False) 
         # Using "command_user", we can send a message directly to the user's DM.
         await command_user.send(embed=help)
 
